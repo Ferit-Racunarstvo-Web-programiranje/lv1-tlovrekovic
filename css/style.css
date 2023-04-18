@@ -585,3 +585,67 @@ footer {
     align-items: center;
     gap: 32px;
 }
+@media screen and (max-width: 1000px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .nav-bar-anchors {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .max-width-input {
+        width: 424px;
+    }
+
+    .multiple-inputs-same-line {
+        width: 196px;
+    }
+
+    .footer-anchors-socials-container {
+        flex-direction: column;
+    }
+
+    .footer-anchors {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 20pxd;
+    }
+
+    .contact-me-terms {
+        margin-left: 80px;
+    }
+
+    .home-large-text {
+        font-size: 50px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+    }
+
+    .portfolio-cards {
+        margin-left: 44px;
+        margin-right: 44px;
+    }
+}
+
+@media screen and (max-width: 800) {
+    .max-width-input {
+        width: 424px;
+    }
+
+    .multiple-inputs-same-line {
+        width: 100px;
+    }
+
+
+    .contact-me-terms {
+        margin-left: 40px;
+    }
+
+    home-large-text {
+        font-size: 40px;
+    }
+}
