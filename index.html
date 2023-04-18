@@ -1,12 +1,173 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivana Ivanić</title>
+    <meta name="viewport" content="width=device-width", inital-scale=1.0>
+    <title> Tomislav Lovrekovic Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1><?= "Hello LV1 task" ?></h1>
+<header class="header">
+    <div class="logo-img">
+    <img src="assets/Logo.svg" alt="">
+    </div>
+    <nav class="navbar_menu">
+        <a href="#services">Services</a>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+    </nav>
+    <button class="button button1">Get In Touch</button>
+
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hey, I am Tomislav</h3>
+        <h1>I create <span>product design</span></h1>
+        <h1>and brand experience</h1>
+        <p>Lorem,ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi
+            apsernatur placeat architecto amet laudantium id.</p>
+        <button class="button button1">Get In Touch</button>
+
+    </div>
+    <div class="home-img">
+        <img src="assets/home.png" alt="">
+    </div>
+</section>
+<section class="services" id="services">
+    <h2>My skills</h2>
+    <h1>My Expertise</h1>
+    <div class="expertise-container">
+        <div class="expertise-box">
+            <i class='bx bx-bar-chart-alt'></i>
+            <h3>Strategy & Direction</h3>
+            <p>Lorem,ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi
+                apsernatur placeat architecto amet laudantium id.</p>
+
+        </div>
+        <div class="expertise-box">
+            <i class='bx bx-bar-chart-alt'></i>
+            <h3>Branding & Logo</h3>
+            <p>Lorem,ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi
+                apsernatur placeat architecto amet laudantium id.</p>
+
+        </div>
+        <div class="expertise-box">
+            <i class='bx bx-bar-chart-alt'></i>
+            <h3>UI & UX Design</h3>
+            <p>Lorem,ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi
+                apsernatur placeat architecto amet laudantium id.</p>
+
+        </div>
+        <div class="expertise-box">
+            <i class='bx bx-bar-chart-alt'></i>
+            <h3>Webflow Development</h3>
+            <p>Lorem,ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi
+                apsernatur placeat architecto amet laudantium id.</p>
+
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    
+    <div class="about-img">
+        <img src="assets/home.png" alt="">
+    </div>
+    <div class="about-content">
+        <h2 >About</h2>
+        <h1 >About Me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam ante, aliquam id lorem in, fermentum mollis libero. Cras congue tincidunt ipsum malesuada pellentesque. Fusce vel tristique tortor, in rutrum leo. Morbi luctus orci sit amet libero pulvinar, laoreet ultrices massa ullamcorper. Pellentesque sit amet leo fringilla, venenatis ipsum eu, tempus nisl. Cras condimentum enim vel enim aliquet suscipit. Nullam fringilla, velit nec sodales dictum, eros elit semper orci, non commodo augue massa porttitor nunc. Praesent sit amet facilisis lectus. Nam et mauris dolor. Etiam accumsan gravida magna non scelerisque. Curabitur at lectus nisl. Morbi sagittis vestibulum justo, quis sollicitudin diam feugiat sollicitudin. Proin semper molestie mauris, quis lobortis velit varius eget. Fusce imperdiet gravida pharetra.</p>
+
+    </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+    <h1 >Recent Projects</h1>
+    <h2>My Portfolio</h2>
+
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="assets/home.png" alt="">
+            <div class="portfolio-layer">
+                <h4 >Ahuse</h4>
+                <p>Lorem,ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi
+                    apsernatur placeat architecto amet laudantium id.</p>
+                <a href="https://dribbble.com/"><i class='bx bx-link-external'>View in Dribble</i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="assets/home.png" alt="">
+            <div class="portfolio-layer">
+                <h4 >App Dashboard</h4>
+                <p>Lorem,ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi
+                    apsernatur placeat architecto amet laudantium id.</p>
+                <a href="https://dribbble.com/"><i class='bx bx-link-external'>View in Dribble</i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="assets/home.png" alt="">
+            <div class="portfolio-layer">
+                <h4 >Easy Rent</h4>
+                <p>Lorem,ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi
+                    apsernatur placeat architecto amet laudantium id.</p>
+                <a href="https://dribbble.com/"><i class='bx bx-link-external'>View in Dribble</i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+    <div class="testimonial-container">
+        
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+    <h3>Get in Touch</h3>
+    <h2>Contact me</h2>
+    <p>Lorem ipsum dolor sit amet,consectetur adipsicing elit</p>
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+        </div>
+
+        <div class="input-box">
+            <input type="mail" placeholder="Email">
+            <input type="number" placeholder="Phone number">
+        </div>
+        <div class="input-box">
+            <P>Choose a Topic</P>
+            <select id="topics" name="topics">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Type your message"></textarea>
+        <input type="submit" value="Send Message" class="button button1">
+    </form>
+
+</section>
+
+<footer class="footer"></footer>
+    <a href="#home" class="logo">logoipsum</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="footer_menu">
+        <a href="#services">Services</a>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+    </nav>
+
 </body>
-</html>
+
