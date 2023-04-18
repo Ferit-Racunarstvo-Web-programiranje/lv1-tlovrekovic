@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
@@ -11,27 +11,30 @@
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     --bg-color: #FFFFFF;
     --second-bg-color: #f5fcff;
     --text-color: #1c1e53;
-    --heading-color:#282938;
+    --heading-color: #282938;
     --text-color-blue: #5e3bee;
 }
-html{
-    font-size:62.5%;
-    overflow-x:hidden;
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
-body{
+
+body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
-.header{
+
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,7 +44,8 @@ section{
     padding-left: 85.33px;
     padding-right: 85.33px;
 }
-.header button{
+
+.header button {
     border: 1.33px solid #5E3BEE;
     background-color: white;
     color: #5E3BEE;
@@ -50,55 +54,74 @@ section{
 }
 
 
-.navbar_menu a{
+.navbar_menu a {
     font-size: 2rem;
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
-    
+
 
 }
 
-.navbar_menu a:hover ,
-.navbar a.active{
+.navbar_menu a:hover,
+.navbar a.active {
     color: var(--text-color-blue);
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 3.6rem;
-    color:var(--text-color);
+    color: var(--text-color);
     display: none;
 }
 
-.home{
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -20px;
-    background-color:var(--second-bg-color);
+    background-color: var(--second-bg-color);
 
 }
-span{
+
+span {
     color: #5e3bee;
 
 }
-.home-img img{
+
+.home-img img {
     width: 35vw;
 }
 
-.home-content h3{
-    font-size: 3.2rem;
+.home-content h3 {
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.home-content h1 {
+    font-family: Roboto;
+    font-size: 75px;
     font-weight: 700;
+    line-height: 90px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+
 }
 
-.home-content h1{
-    font-size: 7rem;
-    font-weight: 700-Bold;
-    line-height: 1.3;
-}
+.home-content p {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
 
-.home-content p{
-    font-size: 1.6rem;
 }
 
 .button {
@@ -107,20 +130,21 @@ span{
     color: #5E3BEE;
     padding: 18.6667px 42.6667px;
     border-radius: 5.33333px
-  }
+}
+
 .button1 {
     background-color: white;
     color: black;
     border: 2px solid #5e3bee;
 }
-  
+
 .button1:hover {
     background-color: #5e3bee;
 
     color: white;
 }
 
-.about{
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,76 +152,106 @@ span{
     background: var(--bg-color);
 }
 
-.about-img img{
+.about-img img {
     width: 35vw;
     align-self: flex-start;
 }
 
-.heading{
+.heading {
     text-align: center;
     font-size: 4.5rem;
 }
-.services h2{
+
+.services h2 {
     margin-bottom: 5rem;
     font-weight: 500-Medium;
     align-self: flex-start;
     font-size: 2rem;
     height: 1.5;
 }
-.services h1{
+
+.services h1 {
     margin-bottom: 5rem;
     font-weight: 700-Bold;
     font-size: 3rem;
     height: 1.2;
 }
-.expertise-container{
+
+.expertise-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap:2rem;
+    gap: 2rem;
 }
-.expertise-container .expertise-box{
+
+.expertise-container .expertise-box {
     flex: 1 1 30rem;
-    background: var(--bg-color);
+    width: 500px;
+    height: 300px;
+    background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
-    border: 2px solid #5e3bee;
+    border: 2px solid #FFFFFF;
     border-radius: 2rem;
     text-align: center;
 }
-.expertise-container .expertise-box:hover{
-    border-color:#5e3bee ;
+
+.expertise-container .expertise-box:hover {
+    border-bottom: 4px solid #5E3BEE;
     transform: scale(1.02);
 }
-.expertise-box h3{
-    margin-bottom: 1rem;
-    font-weight: 700-Bold;
-    font-size: 2.5rem;
-    height: 1.2;
 
-}
-.expertise-box p{
-    font-weight: 400-normal;
-    font-size: 1.125rem;
-    height: 1.5;
+.expertise-box h3 {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+
 
 }
 
+.expertise-box p {
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
 
-.about-content h1{
+
+}
+
+.expertise-box .expertise-img {
+    width: 50px;
+    height: 50px;
+    padding: 14px;
+    justify-content: left;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10.6667px;
+}
+
+
+.about-content h1 {
     font-size: 7rem;
     font-weight: 700-Bold;
     line-height: 1.3;
     text-align: left;
 }
-.about-content p{
-    font-size: 1.6rem;
-    font-weight: 400-Normal;
-    margin: 2rem;
+
+.about-content p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
     text-align: left;
+
 }
 
-.portfolio h1{
+.portfolio .body1 {
     margin-bottom: 5rem;
     font-weight: 500-Medium;
     align-self: flex-start;
@@ -206,45 +260,51 @@ span{
 
 }
 
-.portfolio h2{
-    font-size: 7rem;
-    font-weight: 700-Bold;
-    line-height: 1.3;
+.portfolio .portfolio-title {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
     text-align: left;
+
 
 }
 
-.portfolio{
+.portfolio {
     background: var(--second-bg-color);
 }
 
-.portfolio-container{
+.portfolio-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap:2rem;
+    gap: 2rem;
 }
-.portfolio-container .portfolio-box{
+
+.portfolio-container .portfolio-box {
     flex: 1 1 30rem;
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border:.2rem solid var(--bg-color) ;
+    border: .2rem solid var(--bg-color);
 
-    
+
 }
-.portfolio-container .portfolio-box:hover{
-    border-color:#5e3bee ;
+
+.portfolio-container .portfolio-box:hover {
+    border-color: #5e3bee;
     transform: scale(1.02);
 }
-.portfolio-box img{
+
+.portfolio-box img {
     width: 100%;
     border-radius: 2rem;
 }
 
-.portfolio-box .portfolio-layer h4{
+.portfolio-box .portfolio-layer h4 {
     margin-bottom: 5rem;
     font-weight: 500-Medium;
     text-align: left;
@@ -252,27 +312,146 @@ span{
     height: 1.5;
 }
 
-.portfolio-box .portfolio-layer p{
-    font-size: 1.6rem;
-    font-weight: 400-Normal;
-    margin: 2rem;
-    text-align: left;
-}
-.portfolio-box .portfolio-layer i{
+.portfolio-box .portfolio-layer p {
     font-size: 1.6rem;
     font-weight: 400-Normal;
     margin: 2rem;
     text-align: left;
 }
 
-.contact h3{
+.portfolio-box .portfolio-layer i {
+    font-size: 1.6rem;
+    font-weight: 400-Normal;
+    margin: 2rem;
+    text-align: left;
+}
+
+.portfolio .portfolio-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13.3333px 21.3333px;
+    gap: 16px;
+    background: #E62872;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 10.6667px;
+    border: none;
+    height: 74px;
+
+}
+
+.portfolio .portfolio-button .body2 {
+    font-size: 1.6rem;
+    font-weight: 400-Normal;
+    margin: 2rem;
+    color: #FFFFFF;
+    text-align: left;
+
+}
+
+.portfolio .portfolio-button:hover {
+    background: #1C1E53;
+    color: white;
+}
+
+.testimonials {
+    padding: 112px 64px;
+    background-color: #F5FCFF;
+    width: 100%;
+}
+
+.testimonials-subtitle {
+    font-size: 1.6rem;
+    font-weight: 400-Normal;
+    margin: 2rem;
+    text-align: left;
+}
+
+.testimonials-title {
+    margin-bottom: 5rem;
+    font-weight: 500-Medium;
+    text-align: left;
+    font-size: 3rem;
+    height: 1.5;
+}
+
+.testimonials-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 42.67px;
+    overflow: auto;
+    width: 100%;
+}
+
+.testimonials-card {
+    border: 1.33333px solid #006B6A;
+    border-radius: 8px;
+    padding: 42.6667px;
+    width: 500px;
+    min-width: 500px;
+}
+
+.testimonials-card .body1 {
+    border-radius: nullpx;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+}
+
+.testimonials-card-stars {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5.33px;
+}
+
+.testimonials-card-creator {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonials-card-creator-avatar {
+    width: 70px;
+    height: 70px;
+}
+
+.testimonials-card-creator-name-occupation {
+    margin-left: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.testimonials-card-creator-name {
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+
+.testimonials-card-creator-occupation {
+    margin: 0px;
+}
+
+.contact h3 {
     margin-bottom: 4rem;
     text-align: center;
     font-size: 2.5rem;
     height: 1.5;
 
 }
-.contact h2{
+
+.contact h2 {
     margin-bottom: 4rem;
     font-weight: 500-Medium;
     text-align: center;
@@ -281,7 +460,7 @@ span{
 
 }
 
-.contact p{
+.contact p {
     font-weight: 400-normal;
     text-align: center;
     font-size: 2.5rem;
@@ -289,24 +468,25 @@ span{
 
 }
 
-.contact form{
+.contact form {
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.contact form .input-box{
+.contact form .input-box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap:2rem;
+    gap: 2rem;
 }
+
 .contact form .input-box input,
 .contact form textarea,
 .contact form label,
-.contact form select{
+.contact form select {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
@@ -316,13 +496,16 @@ span{
     border: 2px solid #5e3bee;
     margin: .7rem 0;
 }
-.contact form .input-box input{
+
+.contact form .input-box input {
     width: 48%;
 }
-.contact form textarea{
+
+.contact form textarea {
     resize: none;
 }
-.contact form .input-box p{
+
+.contact form .input-box p {
     font-weight: 400-normal;
     text-align: left;
     font-size: 2.5rem;
@@ -330,10 +513,75 @@ span{
 
 }
 
-.contact form .btn{
+.contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
 
 }
 
+footer {
+    padding: 106.667px 85.3333px;
+    gap: 106.67px;
+    background: #F5FCFF;
+}
 
+.footer-socials-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 42.67px;
+}
+.footer-menu a:hover,
+.footer a.active {
+    color: var(--text-color-blue);
+}
+
+.footer-menu a {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.footer-hr {
+    background: rgba(40, 41, 56, 0.55);
+    height: 1px;
+    margin-top: 80px;
+}
+
+.footer-credits-terms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-credits {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.6667px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.footer-terms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
