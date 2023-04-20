@@ -1,6 +1,6 @@
 # LV 1 zadatak - Osobna stranica
 
-### LINK: https://lv1-portfolio-tl.onrender.com
+### LINK: https://final-portfolio-tlovrekovic.onrender.com
 
 <hr />
 
