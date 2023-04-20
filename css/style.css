@@ -273,6 +273,15 @@ span {
 
 .portfolio {
     background: var(--second-bg-color);
+
+}
+
+.portfolio .portfolio_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .portfolio-container {
@@ -539,6 +548,7 @@ footer {
     padding: 0px;
     gap: 42.67px;
 }
+
 .footer-menu a:hover,
 .footer a.active {
     color: var(--text-color-blue);
@@ -585,67 +595,147 @@ footer {
     align-items: center;
     gap: 32px;
 }
-@media screen and (max-width: 1000px) {
-    .nav-bar {
+
+  @media only screen and (max-width:420px) {
+    .header {
         flex-direction: column;
+        justify-content: center;
+    }
+    body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
     }
 
-    .nav-bar-anchors {
+    .home {
         flex-direction: column;
-        gap: 0px;
+        justify-content: center;
     }
 
-    .max-width-input {
-        width: 424px;
+    .home-img {
+        padding-top: 33px;
+        padding-bottom: 33px;
+        height: auto;
+        object-fit: contain;
     }
 
-    .multiple-inputs-same-line {
-        width: 196px;
+    .home h3,
+    .home p {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-left: 8px;
+        padding-right: 0px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
-    .footer-anchors-socials-container {
+    .home h1 {
+        display: flex;
+        align-items: flex-start;
+        font-size: 30px;
+        padding: 8px 0px;
+    }
+
+
+    .expertise {
+        margin-top: 80px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .expertise-container {
+        margin-top: 86px;
+        gap: 42px;
+        padding: 0px 16px;
+    }
+
+    .expertise-box {
+        width: 160px;
+    }
+
+
+    .about-content {
         flex-direction: column;
+        padding: 86px 16px;
+        gap: 80px;
     }
 
-    .footer-anchors {
-        flex-direction: column;
+    .about-img {
+        max-width: 70%;
+    }
+
+
+    .testimonials {
+        padding: 80px 0px;
+    }
+
+    .testimonials-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 42.67px;
+        overflow: auto;
+        padding: 16px 0px;
+    }
+    .contact .input-box {
+        align-self: flex-start;
+        display: inline-flex;
+        justify-content: start;
+        align-items: center;
         gap: 12px;
-        margin-bottom: 20pxd;
-    }
-
-    .contact-me-terms {
-        margin-left: 80px;
-    }
-
-    .home-large-text {
-        font-size: 50px;
+        margin-left: 13px;
     }
 
     .portfolio {
+        padding-top: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .portfolio-container {
+        margin: 0px;
+        width: 100%;
+    }
+
+    footer {
+        padding: 106px 0px;
+        gap: 86px;
+        background: #F5FCFF;
+    }
+
+    .footer-credits-terms {
         flex-direction: column;
     }
 
-    .portfolio-cards {
-        margin-left: 44px;
-        margin-right: 44px;
-    }
-}
-
-@media screen and (max-width: 800) {
-    .max-width-input {
-        width: 424px;
+    .footer-terms {
+        flex-direction: column;
     }
 
-    .multiple-inputs-same-line {
-        width: 100px;
+    .footer-hr {
+        margin: 16px 16px;
+    }
+    .footer-menu {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 20px;
     }
 
-
-    .contact-me-terms {
-        margin-left: 40px;
+    .contact {
+        margin: 80px 0px;
+        padding: 0px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    home-large-text {
-        font-size: 40px;
+    .testimonials-card {
+        border: 1.33333px solid #006B6A;
+        border-radius: 8px;
+        padding: 42.6667px;
+        width: 160px;
+        min-width: 160px;
     }
 }
